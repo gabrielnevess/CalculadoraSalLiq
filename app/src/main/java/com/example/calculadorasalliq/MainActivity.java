@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import com.example.calculadorasalliq.model.Trabalhador;
@@ -27,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
         buttonCalcular.setOnClickListener(view -> {
 
-            Double salarioBruto = Double.parseDouble(editTextSalarioBruto.getText().toString());
-            Integer qtdDependentes = Integer.parseInt(editTextQtdDependentes.getText().toString());
-            Double outrosDescontos = Double.parseDouble(editTextOutrosDescontos.getText().toString());
+            Double salarioBruto = Double.parseDouble(TextUtils.isEmpty(editTextSalarioBruto.getText().toString()) ? "0" : editTextSalarioBruto.getText().toString());
+            Integer qtdDependentes = Integer.parseInt(TextUtils.isEmpty(editTextQtdDependentes.getText().toString()) ? "0" : editTextQtdDependentes.getText().toString());
+            Double outrosDescontos = Double.parseDouble(TextUtils.isEmpty(editTextOutrosDescontos.getText().toString()) ? "0" : editTextOutrosDescontos.getText().toString());
 
             Trabalhador trabalhador = new Trabalhador();
             trabalhador.setSalarioBruto(salarioBruto);
