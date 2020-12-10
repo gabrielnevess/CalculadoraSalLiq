@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CalculadoraSalLiq</string>
+    <string name="title_primeira_tela">Calculadora de Salário Líquido</string>
+    <string name="title_segunda_tela">Resultado</string>
+    <string name="salario_bruto">Salário Bruto R$</string>
+    <string name="qtd_dependentes">Números de Dependentes</string>
+    <string name="outros_descontos">Outros Descontos</string>
+    <string name="inss">INSS</string>
+    <string name="irrf">IRRF</string>
+    <string name="salario_liquido">Salário Líquido</string>
+    <string name="descontos">Descontos</string>
+</resources>
