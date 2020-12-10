@@ -93,8 +93,10 @@ public class MainActivity2 extends AppCompatActivity {
 
         Double resultadoSalLiq = trabalhador.getSalarioBruto() - contribuicaoINSS - resultadoIRRF - trabalhador.getOutrosDescontos();
 
+        resultadoSalarioBruto.setText(String.format("%.2f", trabalhador.getSalarioBruto()));
         resultadoInss.setText(String.format("%.2f", contribuicaoINSS));
         resultadoIrrf.setText(String.format("%.2f", resultadoIRRF));
+        resultadoOutrosDescontos.setText(String.format("%.2f", trabalhador.getOutrosDescontos()));
         resultadoDescontos.setText(String.format("%.2f", trabalhador.getOutrosDescontos()));
         resultadoSalarioLiquido.setText(String.format("%.2f", resultadoSalLiq));
 
