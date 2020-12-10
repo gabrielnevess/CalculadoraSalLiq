@@ -2,6 +2,7 @@ package com.example.calculadorasalliq;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -43,6 +44,7 @@ public class MainActivity2 extends AppCompatActivity {
     private static final Double ALIQUOTA_IRRF_4 = 22.5;
     private static final Double ALIQUOTA_IRRF_5 = 27.5;
 
+    @SuppressLint("DefaultLocale")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
